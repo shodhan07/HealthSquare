@@ -1,0 +1,48 @@
+.footer {
+  background: #0a8a2a; /* Deep green */
+  color: #f1f1f1;
+  padding: 30px 50px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Info Row */
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #d0d0d0;
+  margin-bottom: 15px;
+}
+
+.infoRow p {
+  margin: 5px 0;
+}
+
+/* Bottom Section */
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #d0d0d0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcons a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #81c784; /* green hover */
+  transform: translateY(-3px);
+}

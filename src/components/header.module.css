@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #0a8a2a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* --- Auth Buttons --- */
+.authButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.signIn,
+.signUp {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signIn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signIn:hover {
+  background: white;
+  color: #0a8a2a;
+}
+
+.signUp {
+  background: white;
+  color: #0a8a2a;
+  font-weight: bold;
+}
+
+.signUp:hover {
+  background: #d4ffd8;
+  color: #0a8a2a;
+}

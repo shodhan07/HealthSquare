@@ -1,0 +1,163 @@
+.home {
+  padding: 20px;
+  background: linear-gradient(to right, #e8f5e9, #f9fbe7);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== Hero + Right Container ===== */
+.heroContainer {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* Hero Section stays narrow */
+.heroSection {
+  position: relative;
+  max-width: 100vh;
+  flex-shrink: 0; /* don’t shrink image */
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+}
+
+.heroOverlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.heroOverlay p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.heroBtn {
+  background: #4caf50;
+  border: none;
+  padding: 12px 24px;
+  margin-right: 300px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.heroBtn:hover {
+  background: #2e7d32;
+}
+
+/* ===== Right Content (search + quick access) ===== */
+.rightContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Search Bar */
+.searchBar {
+  margin-bottom: 20px;
+  display: flex;
+  max-width: 100%;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.searchBar input {
+  flex: 1;
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchBar button {
+  background: #0a8a2a;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.searchBar button:hover {
+  background: #05691f;
+}
+
+/* ===== Menu Section ===== */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  padding: 24px 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 140px; /* adjusted smaller for right column */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card svg {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #4caf50;
+}
+
+.emergency {
+  background: linear-gradient(135deg, #ff4d4f, #ff7875);
+  color: white;
+}
+
+.emergency svg {
+  color: white;
+}
+
+.emergency:hover {
+  box-shadow: 0 8px 22px rgba(255, 77, 79, 0.3);
+}
+
+.sectionTitle {
+  font-size: 22px;
+  margin: 15px 5px;
+  font-weight: 600;
+  color: #333;
+}
