@@ -15,7 +15,6 @@ const Footer = () => {
       <div className={styles.footerBottom}>
         <p>© {new Date().getFullYear()} Health Square. All rights reserved.</p>
         <div className={styles.socialIcons}>
-          <a href="#"><FaFacebookF /></a>
           <a href="#"><FaTwitter /></a>
           <a href="#"><FaLinkedinIn /></a>
           <a href="#"><FaInstagram /></a>
