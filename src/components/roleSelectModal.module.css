@@ -1,0 +1,112 @@
+body {
+font-family: 'open sans', sans-serif;
+}
+
+/* Overlay background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 138, 42, 0.2);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+/* Modal */
+.modal {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 35px 45px;
+  width: 550px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0a8a2a;
+}
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Roles container */
+.roleOptions {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Role Card */
+.roleCard {
+  flex: 1;
+  min-width: 150px;
+  max-width: 160px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.roleCard:hover {
+  background: linear-gradient(135deg, #0a8a2a, #27ae60);
+  color: white;
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 128, 0, 0.3);
+}
+
+/* Icons */
+.icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+  color: #0a8a2a;
+  transition: color 0.3s ease;
+}
+
+.roleCard:hover .icon {
+  color: white;
+}
+
+/* Text */
+.roleCard h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.roleCard p {
+  font-size: 13px;
+  color: #666;
+}
+
+.roleCard:hover p {
+  color: #f1f1f1;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
