@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./patientHome.module.css";
 import {
     FaCalendarCheck, FaClipboardList, FaAmbulance, FaUserMd,
-    FaFileMedical, FaVials, FaPills, FaMoneyBillWave, FaHeadset, FaHospital
+    FaFileMedical, FaPills, FaMoneyBillWave, FaHospital
 } from "react-icons/fa";
+import RoleSelectModal from "./RoleSelectModal"; // <-- import modal
 
 const Home = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <div className={styles.home}>
             {/* Hero + Right Content in flex */}
@@ -20,7 +23,12 @@ const Home = () => {
                     <div className={styles.heroOverlay}>
                         <h1>Your Health, Our Priority</h1>
                         <p>Trusted care at your fingertips. Book, manage and track easily.</p>
-                        <button className={styles.heroBtn}>Get Started</button>
+                        <button
+                            className={styles.heroBtn}
+                            onClick={() => setIsModalOpen(true)}
+                        >
+                            Get Started
+                        </button>
                     </div>
                 </div>
 
@@ -46,6 +54,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Role Select Modal */}
+            {isModalOpen && (
+                <RoleSelectModal onClose={() => setIsModalOpen(false)} />
+            )}
         </div>
     );
 };
