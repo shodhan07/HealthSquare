@@ -1,0 +1,170 @@
+.appointments {
+    padding: 30px;
+    background: linear-gradient(to right, #e8f5e9, #f9fbe7);
+    font-family: "Segoe UI", sans-serif;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #2e7d32;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.newBtn {
+    background: #4caf50;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.newBtn:hover {
+    background: #2e7d32;
+}
+
+/* Search Bar */
+.searchBar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    padding: 10px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 15px;
+    background: none;
+}
+
+.searchIcon {
+    color: #4caf50;
+    font-size: 18px;
+}
+
+/* Section Titles */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/* Cards Layout */
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Doctor Image */
+.docImage {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.cardContent {
+    padding: 16px;
+}
+
+.cardContent h3 {
+    color: #2e7d32;
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.specialty {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Status Badges */
+.statusUpcoming {
+    background: #c8e6c9;
+    color: #2e7d32;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    align-self: flex-start;
+}
+
+.statusCompleted {
+    background: #e0f7fa;
+    color: #00695c;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .newBtn {
+        align-self: flex-start;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+}
