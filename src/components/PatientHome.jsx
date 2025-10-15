@@ -56,8 +56,15 @@ const Home = () => {
                             <FaClipboardList />
                             <p>My Appointments</p>
                         </div>
-                        
-                        <div className={styles.card}><FaHospital /><p>Hospitals</p></div>
+                        <div
+                            className={styles.card}
+                            onClick={() => navigate("/hospitals")}
+                        >
+                            <FaHospital />
+                            <p>Hospitals</p>
+
+                        </div>
+                        {/* <div className={styles.card}><FaHospital /><p>Hospitals</p></div> */}
                         <div className={styles.card}><FaUserMd /><p>Doctors</p></div>
                         <div className={styles.card}><FaFileMedical /><p>Medical Records</p></div>
                         <div className={styles.card}><FaPills /><p>Prescriptions</p></div>
